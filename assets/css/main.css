@@ -89,7 +89,7 @@ footer {
 /* == Elements == */
 
 #biography {
-    display: flex;
+    display: flex; /* flexed to show picture nicely */
     justify-content: space-between;
 }
 
@@ -97,13 +97,13 @@ footer {
     width: 200px
 }
 
-#my-work {
+#my-work { /* flexed to show web dev projects as cards */
     display: flex;
     flex-wrap: wrap;
 }
 
-#code-refactor {
-    width: 250px;
+#code-refactor { /* TODO: do this without an ID tag */
+    width: 250px; /* First project's picture is larger as per requirements */
 }
 
 #closest-named-color {
