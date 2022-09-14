@@ -1,3 +1,20 @@
+<!--
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+✔️THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+✔️THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+✔️THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+✔️THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+✔️THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+✔️THEN I am presented with a responsive layout that adapts to my viewport
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,16 +36,54 @@
         </nav>
     </header>
     <main>
+        <h2>About Me</h2>
         <section id="about-me">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eveniet sapiente quia dolores atque, iste delectus autem nesciunt maiores. Sequi rem numquam culpa libero doloremque deleniti vero, ad eum enim.</p>
+            <article id="biography">
+                <p>Hey there! I'm Joe, I've been coding for around 10-15 years dabbling in anything 
+                    that catches my curiosity. I'm excited to take a more guided approach to learning, 
+                    and to round out my skills as a developer!</p>
+                <img src="./assets/images/joe-shoulak.png" id="joe-shoulak" alt="Joe Shoulak"/>
+            </article>
         </section>
-        
+
+        <h2>My Work</h2>
         <section id="my-work">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eveniet sapiente quia dolores atque, iste delectus autem nesciunt maiores. Sequi rem numquam culpa libero doloremque deleniti vero, ad eum enim.</p>
+            <article class="card" id="first-card">
+                <h3>Code Refactor</h3>
+                <a href="https://joepshoulak.github.io/UMN-HTML-CSS-Git-Challenge-Code-Refactor/" target="_blank">
+                    <img src="./assets/images/code-refactor.png" id="code-refactor"/>
+                </a>
+                <p>The first homework for the UMN Web Dev Bootcamp!</p>
+            </article>
+            <article class="card">
+                <h3>Closest Named Color</h3>
+                <a href="https://joepshoulak.github.io/closest-named-color/" target="_blank">
+                    <img src="./assets/images/closest-named-color.png" id="closest-named-color"/>
+                </a>
+                <p>An applet for selecting the closest named color in CSS for use in your code.</p>
+            </article>
+            <article class="card">
+                <h3>Project 3</h3>
+                <img src="https://via.placeholder.com/150" />
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eveniet sapiente quia dolores atque, iste delectus autem nesciunt maiores. Sequi rem numquam culpa libero doloremque deleniti vero, ad eum enim.</p>
+            </article>
+            <article class="card">
+                <h3>Project 4</h3>
+                <img src="https://via.placeholder.com/150" />
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eveniet sapiente quia dolores atque, iste delectus autem nesciunt maiores. Sequi rem numquam culpa libero doloremque deleniti vero, ad eum enim.</p>
+            </article>
+            <article class="card">
+                <h3>Project 5</h3>
+                <img src="https://via.placeholder.com/150" />
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eveniet sapiente quia dolores atque, iste delectus autem nesciunt maiores. Sequi rem numquam culpa libero doloremque deleniti vero, ad eum enim.</p>
+            </article>
         </section>
-        
+
+        <h2>Contact Me</h2>
         <section id="contact-me">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eveniet sapiente quia dolores atque, iste delectus autem nesciunt maiores. Sequi rem numquam culpa libero doloremque deleniti vero, ad eum enim.</p>
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eveniet sapiente quia dolores atque, iste delectus autem nesciunt maiores. Sequi rem numquam culpa libero doloremque deleniti vero, ad eum enim.</p>
+            </article>
         </section>
     </main>
     <footer>
