@@ -53,9 +53,23 @@ section {
     padding: 5px;
 }
 
+h2 {
+    font-size: larger;
+    font-weight: bold;
+}
+
 article {
     background-color: white;
     margin: 10px;
+    padding: 5px;
+}
+
+article h3 {
+    font-size: large;
+}
+
+h2, h3 {
+    padding: 5px;
 }
 
 footer {
@@ -95,6 +109,7 @@ footer {
     width: 150px
 }
 
+/* == Media Queries == */
 
 @media screen and (max-width: 992px) {
     .card {
