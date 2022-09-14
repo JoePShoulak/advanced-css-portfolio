@@ -35,9 +35,12 @@ nav a:hover {
 }
 
 main {
+    width: 66%;
     padding: 20px;
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
+    padding: 5px;
 }
 
 h2 {
@@ -67,9 +70,6 @@ article {
 article h3 {
     font-size: large;
     font-weight: bold;
-}
-
-h2, h3 {
     padding: 5px;
 }
 
@@ -122,4 +122,9 @@ footer {
     .card {
         width: 90%;
     }
+}
+
+/* == Fancy Stuff == */
+:target {
+    scroll-margin-top: 6rem;
 }
