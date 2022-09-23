@@ -1,28 +1,11 @@
-<!--
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-✔️THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-✔️THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-✔️THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-✔️THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-✔️THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-✔️THEN I am presented with a responsive layout that adapts to my viewport
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
     <title>Portfolio - Advanced CSS</title>
 </head>
@@ -35,52 +18,54 @@ WHEN I resize the page or view the site on various screens and devices
             <a href="#contact-me">Contact Me</a>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <h2>About Me</h2>
-        <section id="about-me">
-            <article id="biography">
+        <section id="about-me" class="row">
+            <div id="biography" class="column col-9">
                 <p>Hey there! I'm Joe, I've been coding for around 10-15 years dabbling in anything 
                     that catches my curiosity. I'm excited to take a more guided approach to learning, 
                     and to round out my skills as a developer!</p>
+            </div>
+            <div class="column col-3">
                 <img src="./assets/images/joe-shoulak.png" id="joe-shoulak" alt="Joe Shoulak"/>
-            </article>
+            </div>
         </section>
 
-        <h2>My Work</h2>
-        <section id="my-work">
-            <article class="card" id="first-card">
+        <section id="my-work" class="row">
+            <h2>My Work</h2>
+            <article class="column col-6" id="first-card">
                 <h3>Code Refactor</h3>
                 <a href="https://joepshoulak.github.io/UMN-HTML-CSS-Git-Challenge-Code-Refactor/" target="_blank">
                     <img src="./assets/images/code-refactor.png" id="code-refactor"/>
                 </a>
                 <p>The first homework for the UMN Web Dev Bootcamp!</p>
             </article>
-            <article class="card">
+            <article class="column col-6">
                 <h3>Closest Named Color</h3>
                 <a href="https://joepshoulak.github.io/closest-named-color/" target="_blank">
                     <img src="./assets/images/closest-named-color.png" id="closest-named-color"/>
                 </a>
                 <p>An applet for selecting the closest named color in CSS for use in your code.</p>
             </article>
-            <article class="card">
+            <article class="column col-6">
                 <h3>Project 3</h3>
                 <img src="https://via.placeholder.com/150" />
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eveniet sapiente quia dolores atque, iste delectus autem nesciunt maiores. Sequi rem numquam culpa libero doloremque deleniti vero, ad eum enim.</p>
             </article>
-            <article class="card">
+            <article class="column col-6">
                 <h3>Project 4</h3>
                 <img src="https://via.placeholder.com/150" />
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eveniet sapiente quia dolores atque, iste delectus autem nesciunt maiores. Sequi rem numquam culpa libero doloremque deleniti vero, ad eum enim.</p>
             </article>
-            <article class="card">
+            <article class="column col-6">
                 <h3>Project 5</h3>
                 <img src="https://via.placeholder.com/150" />
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla eveniet sapiente quia dolores atque, iste delectus autem nesciunt maiores. Sequi rem numquam culpa libero doloremque deleniti vero, ad eum enim.</p>
             </article>
         </section>
 
-        <h2>Contact Me</h2>
-        <section id="contact-me">
+        <section id="contact-me" class="row">
+            <h2>Contact Me</h2>
             <article>
                 <p><a href="mailto:joepshoulak2@gmail.com">Email me!</a></p>
             </article>
@@ -89,5 +74,8 @@ WHEN I resize the page or view the site on various screens and devices
     <footer>
         <p>Made by <a href="https://github.com/JoePShoulak" target="_blank">Joe P Shoulak</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
 </html>

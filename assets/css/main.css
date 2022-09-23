@@ -1,130 +1,25 @@
 /* == Tags == */
 
 body {
-    background: #888;
-    font-family: sans-serif;
-
-}
-
-header {
-    background: #555;
-    display: flex;
-    justify-content: space-between;
-    font-size: 2em;
-    color: white;
-    position: fixed;
-    top: 0px;
-    padding: 20px;
-    width: 100%;
-}
-
-nav {
-    display: flex;
-    justify-items: flex-end;
-    margin-right: 100px;
-    gap: 100px;
-}
-
-nav a:any-link {
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    width: 66%;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    padding: 5px;
-}
-
-h2 {
-    background-color: #bbb;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-top: 50px;
-    width: 140px;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-section {
-    background-color: #aaa;
-    margin-bottom: 5px;
-    padding: 5px;
-}
-
-article {
-    background-color: white;
-    margin: 10px;
-    padding: 5px;
-}
-
-article h3 {
-    font-size: large;
-    font-weight: bold;
-    padding: 5px;
-}
-
-footer {
-    background: #555;
-    padding: 5px;
-    color: white;
-    text-align: center;
+    background-color: gray;;
 }
 
 /* == Classes == */
-.card {
-    width: 30%;
-    min-width: 300px;
+.column {
+    background-color: white;
 }
+
 
 /* == Elements == */
 
-#biography {
-    display: flex; /* flexed to show picture nicely */
-    justify-content: space-between;
-}
 
 #joe-shoulak {
     width: 200px
 }
-
-#my-work { /* flexed to show web dev projects as cards */
-    display: flex;
-    flex-wrap: wrap;
-}
-
 #code-refactor { /* TODO: do this without an ID tag */
     width: 250px; /* First project's picture is larger as per requirements */
 }
 
 #closest-named-color {
     width: 150px
-}
-
-/* == Media Queries == */
-
-@media screen and (max-width: 992px) {
-    .card {
-        width: 45%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .card {
-        width: 90%;
-    }
-}
-
-/* == Fancy Stuff == */
-:target {
-    scroll-margin-top: 7rem;
 }
