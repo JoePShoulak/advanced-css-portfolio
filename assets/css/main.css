@@ -16,10 +16,11 @@ body {
 #joe-shoulak {
     width: 200px
 }
-#code-refactor { /* TODO: do this without an ID tag */
-    width: 250px; /* First project's picture is larger as per requirements */
+
+article:nth-child(2) a img {
+    width: 300px;
 }
 
-#closest-named-color {
-    width: 150px
+article a img {
+    width: 150px;
 }
